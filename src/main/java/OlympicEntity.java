@@ -6,7 +6,7 @@ public abstract class OlympicEntity implements Comparable<OlympicEntity> {
     private final String name;
 
     public OlympicEntity(int id, String name) {
-        if (name == null || id < 1) {
+        if (name == null || name.isEmpty() || id < 1) {
             throw new IllegalArgumentException();
         }
 
