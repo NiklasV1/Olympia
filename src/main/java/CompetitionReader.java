@@ -9,7 +9,7 @@ public class CompetitionReader {
     Set<Athlete> athletes;
 
     public CompetitionReader(Set<Athlete> athletes) {
-        if (athletes.size() < 3) {
+        if (athletes == null || athletes.size() < 3) {
             throw new IllegalArgumentException();
         }
         this.athletes = athletes;
