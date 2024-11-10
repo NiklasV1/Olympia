@@ -15,6 +15,6 @@ public class Athlete extends OlympicEntity{
 
     @Override
     public String toString() {
-        return super.getName() + "(" + team.getAbbreviation() + ")";
+        return super.getName() + " (" + team.getAbbreviation() + ")";
     }
 }
