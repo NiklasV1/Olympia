@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.util.Objects;
 
-public class OlympicEntity implements Comparable<OlympicEntity> {
+public abstract class OlympicEntity implements Comparable<OlympicEntity> {
     private final int id;
     private final String name;
 
