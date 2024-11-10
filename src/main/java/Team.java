@@ -3,7 +3,7 @@ public class Team extends OlympicEntity {
 
     public Team(int id, String name, String abbreviation) {
         super(id, name);
-        if (abbreviation == null) {
+        if (abbreviation == null || abbreviation.isEmpty()) {
             throw new IllegalArgumentException();
         }
         this.abbreviation = abbreviation;
@@ -15,6 +15,6 @@ public class Team extends OlympicEntity {
 
     @Override
     public String toString() {
-        return super.getId() + super.getName() + "(" + abbreviation + ")";
+        return super.getId() + " " + super.getName() + " (" + abbreviation + ")";
     }
 }
