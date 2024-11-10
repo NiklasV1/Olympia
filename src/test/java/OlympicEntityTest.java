@@ -41,6 +41,10 @@ class OlympicEntityTest {
 
         assertEquals(testClass1, testClass2);
         assertNotEquals(testClass1, testClass3);
+
+        String testString = "test";
+        //noinspection AssertBetweenInconvertibleTypes
+        assertNotEquals(testClass1, testString);
     }
 
     @Test
